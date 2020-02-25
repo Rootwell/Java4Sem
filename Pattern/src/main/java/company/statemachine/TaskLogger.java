@@ -24,6 +24,7 @@ public class TaskLogger implements Taskable {
         }
         printWriter.println(message + " happens at " + new SimpleDateFormat().toString());
         printWriter.flush();
+        printWriter.close();
     }
 
     public void up(Object... args) {
